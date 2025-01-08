@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       addMessage("user", message);
   
       try {
-        const response = await fetch("http://localhost:5001/chat", {
+        const response = await fetch("https://all-about-me-test.onrender.com/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ message, boyfriendType }),
